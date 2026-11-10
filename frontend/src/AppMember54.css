@@ -1,0 +1,180 @@
+
+/* MEMBER 54 - DASHBOARD AND STUDENTS */
+
+/* Dashboard and Students pages */
+.dashboard-page,
+.students-page {
+  width: 100%;
+  color: #1e293b;
+}
+
+.dashboard-page h1,
+.students-page h1 {
+  color: #123c69;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.dashboard-page > p,
+.students-page > p {
+  color: #64748b;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Dashboard cards */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #1559b7;
+}
+
+.dashboard-card h3 {
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.dashboard-card h2 {
+  color: #123c69;
+  font-size: 30px;
+}
+
+/* Dashboard charts */
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.chart-container {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Student form */
+.student-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.student-form h2 {
+  color: #123c69;
+  margin-bottom: 20px;
+}
+
+.student-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.student-form input,
+.student-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+}
+
+/* Buttons */
+.student-button {
+  background: #1559b7;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  margin-top: 18px;
+}
+
+.student-button:hover {
+  background: #0d3e83;
+}
+
+.student-edit-button {
+  background: #1559b7;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+
+.student-delete-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+/* Student search */
+.student-search {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+/* Student table */
+.student-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.student-table th {
+  background: #123c69;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.student-table td {
+  padding: 13px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-stats,
+  .student-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
