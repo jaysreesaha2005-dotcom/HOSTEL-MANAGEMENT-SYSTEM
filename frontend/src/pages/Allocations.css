@@ -1,0 +1,294 @@
+.allocations-page {
+  padding: 30px;
+  color: #173b63;
+}
+
+.allocations-header {
+  margin-bottom: 25px;
+}
+
+.allocations-header h1 {
+  color: #173b63;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.allocations-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* Allocation Form Card */
+.allocation-form-card {
+  background: white;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.allocation-form-card h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #123c69;
+}
+
+.allocation-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 7px;
+  background: #ffffff !important;
+  color: #1e293b !important;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #1559b7;
+  box-shadow: 0 0 0 3px rgba(21, 89, 183, 0.15);
+}
+
+.form-group select option {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+/* Selected Student Info Banner */
+.student-info-preview {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #1559b7;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.student-info-item span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.student-info-item strong {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+/* Filter Section */
+.allocations-controls {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.allocations-controls input,
+.allocations-controls select {
+  padding: 10px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #ffffff !important;
+  color: #1e293b !important;
+  box-sizing: border-box;
+}
+
+.allocations-controls input::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.allocations-controls input:focus,
+.allocations-controls select:focus {
+  outline: none;
+  border-color: #1559b7;
+  box-shadow: 0 0 0 3px rgba(21, 89, 183, 0.15);
+}
+
+.allocations-controls select option {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.search-input {
+  min-width: 250px;
+}
+
+/* Tabs */
+.view-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab-btn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 9px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #475569;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.tab-btn.active {
+  background: #1559b7;
+  color: #ffffff;
+  border-color: #1559b7;
+}
+
+.tab-btn.active {
+  background: #1559b7;
+  color: white;
+}
+
+/* Allocations Table */
+.allocations-table-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.allocations-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.allocations-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 16px 20px;
+  border-bottom: 2px solid #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.allocations-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.allocations-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.vacated {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.btn-vacate {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-vacate:hover {
+  background: #fecaca;
+}
+
+/* Alert Notification */
+.alert-banner {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-banner.success {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.alert-banner.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 45px 20px;
+  color: #64748b;
+}
