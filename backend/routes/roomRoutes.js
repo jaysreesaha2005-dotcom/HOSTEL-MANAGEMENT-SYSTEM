@@ -1,29 +1,17 @@
 const express = require("express");
 const router = express.Router();
+const roomController = require("../controllers/roomController");
 
-const Room = require("../models/Room");
+// Stats summary route (must be before /:id)
+router.get("/stats/summary", roomController.getRoomStats);
 
-// Add a room
-router.post("/", async (req, res) => {
-  try {
-    const room = await Room.create(req.body);
-    res.status(201).json({
-      message: "Room added successfully",
-      room,
-    });
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-});
+// Get all rooms and create room
+router.get("/", roomController.getRooms);
+router.post("/", roomController.addRoom);
 
-// Get all rooms
-router.get("/", async (req, res) => {
-  try {
-    const rooms = await Room.find().sort({ roomNumber: 1 });
-    res.status(200).json(rooms);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+// Single room operations
+router.get("/:id", roomController.getRoomById);
+router.put("/:id", roomController.updateRoom);
+router.delete("/:id", roomController.deleteRoom);
 
 module.exports = router;
