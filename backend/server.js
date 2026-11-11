@@ -4,6 +4,9 @@ const cors = require("cors");
 
 const complaintRoutes = require("./routes/complaintRoutes");
 const noticeRoutes = require("./routes/noticeRoutes");
+const roomRoutes = require("./routes/roomRoutes");
+const allocationRoutes = require("./routes/allocationRoutes");
+const studentRoutes = require("./routes/studentRoutes");
 
 const app = express();
 
@@ -21,6 +24,15 @@ app.use("/api/complaints", complaintRoutes);
 
 // Notice routes
 app.use("/api/notices", noticeRoutes);
+
+// Room routes
+app.use("/api/rooms", roomRoutes);
+
+// Allocation routes
+app.use("/api/allocations", allocationRoutes);
+
+// Student routes
+app.use("/api/students", studentRoutes);
 
 // Server port
 const PORT = 5000;

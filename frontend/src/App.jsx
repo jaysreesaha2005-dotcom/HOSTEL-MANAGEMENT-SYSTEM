@@ -6,6 +6,8 @@ import {
   Navigate
 } from "react-router-dom";
 
+import Rooms from "./pages/Rooms";
+import Allocations from "./pages/Allocations";
 import Complaints from "./pages/Complaints";
 import Notices from "./pages/Notices";
 
@@ -26,6 +28,14 @@ function App() {
           <aside className="sidebar">
             <h3>MAIN MENU</h3>
 
+            <NavLink to="/rooms" className="nav-link">
+              Room Management
+            </NavLink>
+
+            <NavLink to="/allocations" className="nav-link">
+              Room Allocation
+            </NavLink>
+
             <NavLink to="/complaints" className="nav-link">
               Complaints
             </NavLink>
@@ -39,7 +49,17 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<Navigate to="/complaints" replace />}
+                element={<Navigate to="/rooms" replace />}
+              />
+
+              <Route
+                path="/rooms"
+                element={<Rooms />}
+              />
+
+              <Route
+                path="/allocations"
+                element={<Allocations />}
               />
 
               <Route
