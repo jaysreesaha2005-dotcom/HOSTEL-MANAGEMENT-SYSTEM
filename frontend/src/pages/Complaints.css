@@ -1,0 +1,76 @@
+.complaints-page {
+  padding: 30px;
+  color: #173b63;
+}
+
+.complaints-page h1 {
+  color: #173b63;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.complaints-page > p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.complaints-page form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 15px;
+  max-width: 750px;
+  margin: 20px auto 35px;
+}
+
+.complaints-page input,
+.complaints-page select,
+.complaints-page textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  color: #173b63;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.complaints-page textarea {
+  min-height: 100px;
+}
+
+.complaints-page button {
+  background: #1559b7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.complaints-page button:hover {
+  background: #0d3e83;
+}
+
+.complaint-card {
+  background: white;
+  padding: 20px;
+  margin: 18px auto;
+  max-width: 750px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.complaint-card h3 {
+  color: #1559b7;
+}
+
+.complaint-card p {
+  color: #334155;
+  margin: 10px 0;
+}
