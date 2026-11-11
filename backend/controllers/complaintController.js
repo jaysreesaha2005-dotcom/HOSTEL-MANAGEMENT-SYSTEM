@@ -1,3 +1,4 @@
+
 const Complaint = require("../models/Complaint");
 
 // Add a new complaint

@@ -1,3 +1,4 @@
+
 const Notice = require("../models/Notice");
 
 // Add a notice

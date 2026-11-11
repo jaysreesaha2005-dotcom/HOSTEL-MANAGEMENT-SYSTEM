@@ -8,6 +8,8 @@ import {
   deleteNotice
 } from "../services/noticeService";
 
+import "./Notices.css";
+
 function Notices() {
   const [notices, setNotices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -25,7 +27,7 @@ function Notices() {
     try {
       const data = await getNotices();
       setNotices(data);
-    } catch {
+    } catch (error) {
       setMessage("Could not load notices. Check your backend.");
     } finally {
       setLoading(false);
@@ -105,7 +107,7 @@ function Notices() {
       await deleteNotice(id);
       setMessage("Notice deleted successfully!");
       await loadNotices();
-    } catch {
+    } catch (error) {
       setMessage("Could not delete notice.");
     }
   };

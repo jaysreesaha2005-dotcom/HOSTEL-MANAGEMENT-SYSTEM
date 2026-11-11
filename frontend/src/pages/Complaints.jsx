@@ -24,7 +24,7 @@ function Complaints() {
     try {
       const data = await getComplaints();
       setComplaints(data);
-    } catch {
+    } catch (error) {
       setMessage("Could not load complaints. Check your backend.");
     } finally {
       setLoading(false);
@@ -78,7 +78,7 @@ function Complaints() {
       await deleteComplaint(id);
       setMessage("Complaint deleted successfully!");
       loadComplaints();
-    } catch {
+    } catch (error) {
       setMessage("Could not delete complaint.");
     }
   };
